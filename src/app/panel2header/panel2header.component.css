@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.mainDiv {
+  width: 100%;
+  display: flex;
+
+  box-shadow: 0 4px 8px 0 #ece9f1;
+  font-family: "Open Sans", sans-serif;
+
+  background-color: #fff;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.leftIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftIcon > img {
+  width: 18px;
+  margin: 10px;
+
+  cursor: pointer;
+}
+
+.RightIcon {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80px;
+}
+.RightIcon > img {
+  width: 18px;
+}
+
+.Tabs {
+  display: flex;
+  min-width: calc(100% - 38px - 80px);
+  max-width: calc(100vw - 713px);
+  /* max-width: calc(100vw - 58px - 20px); */
+  /* overflow: scroll !important; */
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  /* flex: 1; */
+}
+.tab {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.tab .tab_icon {
+  padding: 0 10px;
+}
+.tab_name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 6px;
+}
+
+.tooltip {
+  background-color: #ef3f7d;
+  padding: 10px 15px;
+  color: #fff;
+  /* position: relative; */
+}
+.tab.tooltip {
+  color: #fff;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: 39px;
+  border: 7px solid;
+  border-color: #ef3f7d #0000 #0000 #0000;
+  display: none;
+}
+.tab {
+  text-decoration: none;
+  color: #808080;
+  font-size: 14px;
+  padding: 12px 8px;
+}
+/* .tab:hover {
+  background-color: #ff647c;
+  padding: 10px;
+  color: #fff; */
+/* position: relative; */
+/* }
+.tab:hover::before {
+  content: "";
+  position: absolute;
+  color: #fff; */
+/* transform: translate(-50%); */
+/* top: 39px;
+  right: 85%;
+  border: 7px solid;
+  border-color: #ff647c #0000 #0000 #0000; */
+/* display: none; */
+/* } */
+
+::-webkit-scrollbar {
+  height: 3px; /* height of horizontal scrollbar ← You're missing this */
+  width: 3px; /* width of vertical scrollbar */
+  /* border: 1px solid #d5d5d5; */
+  box-shadow: 2px 2px 15px #ece9f1;
+  cursor: pointer;
+  color: #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff647c;
+  cursor: pointer;
+}
+.Tabs::-webkit-scrollbar-thumb:hover {
+  background: #ff647c;
+}
+.tab::-webkit-scrollbar-thumb:hover {
+  background: #ff647c;
+}
+
+@media screen and (max-width: 800px) {
+  .tooltip::before {
+    display: none;
+  }
+}

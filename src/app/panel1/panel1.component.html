@@ -1,0 +1,77 @@
+<div class="wrapper">
+    <div class="parent">
+        <div class="first">
+
+            <app-selectbox></app-selectbox>
+
+
+
+
+
+        </div>
+        <div class="second" style="margin-top: 25px;">
+            <div style="border-left: 4px solid #69358F;height: 35px;">
+
+
+                <div style="color:gray;padding: 10px 25px;font-size: 14px;">Shared Contact</div>
+
+                <!-- <br /> -->
+
+
+                <div>
+                    <div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div style="display: flex;justify-content: center;margin-top: 2px;">
+                <div style="width:200px;border-bottom: 2px solid #ECE9F1;margin-top: 5px;"></div>
+            </div>
+            <div style="color:gray;padding: 8px 25px;font-size: 14px;">Inbox</div>
+
+
+        </div>
+
+
+
+
+
+        <div style="margin-top: 25px">
+
+            <app-shorthead name="COLLABORATION"></app-shorthead>
+            <!-- <app-borderline></app-borderline> -->
+            <div class="four" style="margin-top: 10px;" *ngFor="let item of headlink">
+                <div (click)="addItem(item)" [ngClass]="{'active':item.id==id}" class="collabs"
+                    style="color:gray;padding: 8px 25px;font-size: 14px;" routerLink="{{item.id}}">{{item.name}}</div>
+
+            </div>
+        </div>
+
+
+        <div style="margin-top: 30px;">
+            <app-shorthead name="BOARDS"></app-shorthead>
+            <div style="margin-top: 10px;" *ngFor="let item of boardlink">
+                <div (click)="addItem(item)" [ngClass]="{'active':item.link===id}" class="collabs"
+                    style="color:gray;padding: 6px 25px;font-size: 14px;" routerLink="{{item.link}}">{{item.name}}</div>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <app-shorthead name="TEAMS MEMBER"></app-shorthead>
+            <div>
+                <div style="height:185px;overflow-y: scroll !important;">
+
+                    <app-teammember></app-teammember>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

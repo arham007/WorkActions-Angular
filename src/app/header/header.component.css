@@ -1,0 +1,53 @@
+* {
+  background-color: #fff;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.logo {
+  padding: 16px 20px;
+  height: 50px;
+  font-size: 20px;
+  margin-right: 10px;
+  border-right: 2px solid #f7f5f9;
+}
+.icons {
+  flex: 1 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.search {
+  flex: 2 1 auto;
+  display: flex;
+  background-color: #fff;
+}
+.search > .logo-icon {
+  color: #ece9f1;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 50px;
+}
+.logo-input {
+  width: 100%;
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    width: 100%;
+    border: none;
+    text-align: center;
+  }
+  .search {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .icons {
+    width: 100%;
+    padding: 0 5px;
+  }
+}

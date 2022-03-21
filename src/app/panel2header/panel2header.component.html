@@ -1,0 +1,30 @@
+<div class="mainDiv">
+    <div class="leftIcon" (click)="hidePanel()">
+
+
+        <img src="../../assets/images/dashboard.png" />
+
+    </div>
+
+    <div class="Tabs">
+
+
+        <div class="tab" [ngClass]="{'tooltip': link.link==id}" *ngFor="let link of links">
+            <div [routerLink]="link.link" class="tab_name">
+                {{link.name}}
+            </div>
+            <div (click)="deleteHeadLink(link)" class="tab_icon">
+                <fa-icon [icon]="faXmark"></fa-icon>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="RightIcon">
+        <img style="color: #f92383;" src="../../assets/images/three-dots.png" />
+        <img (click)="hideRight()" src="../../assets/images/dashboard.png" />
+
+
+    </div>
+
+</div>

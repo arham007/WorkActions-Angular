@@ -1,0 +1,29 @@
+.wrapper {
+  width: 255px;
+  /* border: 2px solid red; */
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+  background-color: #fff;
+
+  box-shadow: 2px 2px 14px #cccc;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.icon {
+  cursor: pointer;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 5px;
+  right: 5px;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: calc(100vh - 90px);
+  }
+}

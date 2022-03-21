@@ -1,0 +1,111 @@
+<form [formGroup]="contactForm">
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3">
+            <div class="prefered">
+                Preferred</div>
+        </div>
+        <div class="item item4">
+            <div class="label">Phone <span>
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
+                </span></div>
+        </div>
+        <div class="item item5">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="phone">
+
+            </div>
+        </div>
+        <div class="item item6 center ">
+            <span class="spanPrefred">Preferred</span>
+            <app-checkbox></app-checkbox>
+        </div>
+        <div class="item item7">
+            <div class="label">Mobile <span>
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
+                </span></div>
+        </div>
+        <div class="item item8">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="mobile">
+
+            </div>
+        </div>
+        <div class="item item9 center">
+            <span class="spanPrefred">Preferred</span>
+            <app-checkbox></app-checkbox>
+        </div>
+        <div></div>
+        <div class="item item31">
+            <app-button name="Add Phone Number"></app-button>
+        </div>
+        <div></div>
+
+        <div class="item item10">
+            <div class="label">Email</div>
+        </div>
+
+        <div class="item item11">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="email">
+
+            </div>
+        </div>
+        <div class="item item12">
+
+        </div>
+        <div></div>
+        <div class="item item32">
+            <app-button name="Add Email"></app-button>
+        </div>
+        <div></div>
+        <div class="item item13">
+            <div class="label">WorkAction</div>
+        </div>
+        <div class="item item14">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="workAction">
+
+            </div>
+        </div>
+        <div class="item item15"></div>
+        <div class="item item16">
+            <div class="label">Facebook <span>
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
+                </span></div>
+        </div>
+        <div class="item item17">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="facebook">
+
+            </div>
+        </div>
+        <div class="item item18 center">
+            <span class="spanPrefred">Preferred</span>
+            <app-checkbox></app-checkbox>
+        </div>
+        <div class="item item19">
+            <div class="label">Twitter <span>
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
+                </span></div>
+        </div>
+        <div class="item item20">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="twitter">
+
+            </div>
+        </div>
+        <div class="item item21 center">
+            <span class="spanPrefred">Preferred</span>
+            <app-checkbox></app-checkbox>
+        </div>
+        <div></div>
+        <div class="item item33">
+            <app-button name="Add Social Accounts"></app-button>
+        </div>
+        <div></div>
+
+
+    </div>
+</form>

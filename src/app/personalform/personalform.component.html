@@ -1,0 +1,75 @@
+<form [formGroup]="personalInfoForm">
+
+
+    <div class="container">
+        <div class=" item item1">
+            <div class="label"> Title</div>
+        </div>
+        <div class=" item item2">
+            <div class="select-boxs">
+                <select formControlName="title">
+
+                    <option value="Mr.">Mr.</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+
+                </select>
+
+                <fa-icon style="color: #ef3f7d;font-size: 16px;font-weight: bold;" class="icon" [icon]="faChevronDown">
+                </fa-icon>
+            </div>
+        </div>
+        <div class=" item item3">
+            <div class="label">First Name</div>
+        </div>
+        <div class=" item item4">
+            <div class="col-75">
+                <input type="text" value="arhaam" formControlName="firstName">
+
+            </div>
+        </div>
+        <div class=" item item5">
+            <div class="addBtn">
+
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#ef3f7d">
+                                <path
+                                    d="M86,21.5c-15.74728,0 -28.66667,12.91939 -28.66667,28.66667c0,15.74728 12.91939,28.66667 28.66667,28.66667c15.74727,0 28.66667,-12.91939 28.66667,-28.66667c0,-15.74728 -12.91939,-28.66667 -28.66667,-28.66667zM86,35.83333c8.00097,0 14.33333,6.33237 14.33333,14.33333c0,8.00097 -6.33237,14.33333 -14.33333,14.33333c-8.00097,0 -14.33333,-6.33237 -14.33333,-14.33333c0,-8.00097 6.33237,-14.33333 14.33333,-14.33333zM86,100.33333c-22.5105,0 -64.5,11.0725 -64.5,32.25v17.91667h72.89844l14.33333,-14.33333h-72.89844v-3.58333c0,-6.22783 26.574,-17.91667 50.16667,-17.91667c12.90717,0 26.67903,3.50607 36.5332,7.69857l10.75,-10.75c-14.19717,-7.439 -34.06787,-11.2819 -47.2832,-11.2819zM159.15039,107.5c-0.91644,0 -1.83477,0.35105 -2.53352,1.0498l-7.16667,7.16667l14.33333,14.33333l7.16667,-7.16667c1.3975,-1.3975 1.3975,-3.66956 0,-5.06706l-9.26628,-9.26628c-0.70233,-0.69875 -1.61709,-1.0498 -2.53353,-1.0498zM144.38314,120.78353l-36.88314,36.88314v14.33333h14.33333l36.88314,-36.88314z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class=" item item6">
+            <div class="label">Last Name</div>
+
+        </div>
+        <div class=" item item7">
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" formControlName="lastName">
+
+            </div>
+        </div>
+        <div class=" item item8">
+            <div class="label">Tags</div>
+        </div>
+        <div class=" item item9">
+            <div class="textarea">
+                <textarea style="width: 100%;height: 100px;" formControlName="tags"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+</form>

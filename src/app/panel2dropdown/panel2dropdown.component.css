@@ -1,0 +1,28 @@
+.select-box {
+  position: relative;
+  width: 100%;
+  /* width: 200px; */
+}
+.select-box select {
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid #ece9f1;
+  color: gray;
+  /* border: none; */
+  outline: none;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+/* .select-box .icon {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+} */
+.icons {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+}

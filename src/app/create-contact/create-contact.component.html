@@ -1,0 +1,140 @@
+<div class="wrapper">
+
+    <div class="create-contact" style="margin-top: 25px;">
+
+        <div class="container">
+            <div class="item item1">
+                <div style="display: flex;align-items: center;justify-content: space-around;flex-wrap: wrap;">
+                    <div
+                        style="margin-left:10px;width: 40px;height: 40px;border-radius: 50%;background-color: #69358F;color: #fff;display: flex;justify-content: center;align-items: center;">
+                        <div>A1</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 18px;font-weight: bold;">Create new Contact</div>
+                        <div style="font-size: 12px;color:gray;font-family: Open Sans;">for DuoWorld @ Collaboration
+                            Support</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item2"></div>
+            <div class="item item3">
+                <div class="saveBtn">
+                    <div>Save</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="width:95%;border-bottom: 2px solid #ECE9F1;margin-top: 15px;"></div>
+    </div>
+
+
+
+
+
+    <div style="display: flex;align-items: center;justify-content: flex-end;padding: 10px 20px;">
+
+        <div style="font-size: 12px;margin-right: 10px;font-family: 'Open Sans', sans-serif;font-weight: bold;">
+            Shared</div>
+        <div style="margin-right: 10px;">
+            <app-checkbox></app-checkbox>
+        </div>
+        <div style="margin-right: 10px;color:#ef3f7d">
+            <fa-icon [icon]="faListUl"></fa-icon>
+        </div>
+    </div>
+
+
+    <app-personalform></app-personalform>
+    <br />
+    <div style="display: flex;justify-content: space-between;padding: 0 30px;">
+
+        <div style="font-size: 15px;color: #ef3f7d;font-weight: bolder;font-family: 'Open Sans', sans-serif;">
+            Contact Information</div>
+
+        <div>
+            <fa-icon style="color: #D0C9D6;" [icon]="faChevronCircleDown"></fa-icon>
+        </div>
+    </div>
+
+    <br />
+    <app-contactform></app-contactform>
+
+
+
+    <div style="display: flex;justify-content: space-between;">
+        <div
+            style="margin-left: 20px;font-size: 16px;color: #ef3f7d;font-weight: bold;font-family: 'Open Sans', sans-serif;color: #ef3f7d;">
+            Organization</div>
+        <div style="margin-right: 20px;">
+            <fa-icon style="color: #D0C9D6;" [icon]="faChevronCircleDown"></fa-icon>
+        </div>
+    </div>
+    <br />
+    <app-accordion value="Organization A">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        distinctio illum expedita molestias perspiciatis magni velit? Laboriosam dignissimos voluptatum, quidem,
+        eius quia aut ex suscipit quis eaque nihil, delectus cupiditate.lorem</app-accordion>
+    <br />
+    <app-accordion value="Organization B">
+
+        <app-accordform></app-accordform>
+        <!-- <div style="margin:50px;">
+            <div>
+                <app-searchbox></app-searchbox>
+            </div>
+            <div>
+                <app-inputbox name="Organization Name"></app-inputbox>
+            </div>
+            <div>
+                <app-button name="Create an Organization"></app-button>
+            </div>
+            <div>
+                <app-inputbox name="Role"></app-inputbox>
+            </div>
+
+        </div> -->
+    </app-accordion>
+    <br />
+    <div style="display: flex;justify-content: space-between;">
+        <div
+            style="margin-left: 20px;font-size: 16px;color: #ef3f7d;font-weight: bold;font-family: 'Open Sans', sans-serif;">
+            Address</div>
+        <div style="margin-right: 20px;">
+            <fa-icon style="color: #808080;" [icon]="faChevronCircleDown"></fa-icon>
+        </div>
+    </div>
+    <br />
+
+    <app-accordion value="Home Address">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quas libero numquam placeat
+        eos quidem, veniam deserunt illum repellat tempore nisi? Dolores cum quibusdam, reiciendis recusandae
+        sint officiis dolore obcaecati!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quas libero numquam placeat
+        eos quidem, veniam deserunt illum repellat tempore nisi? Dolores cum quibusdam, reiciendis recusandae
+        sint officiis dolore obcaecati!
+    </app-accordion>
+    <br />
+    <app-accordion value="Office Address">
+        <app-officeaddress></app-officeaddress>
+
+    </app-accordion>
+    <div
+        style="width: 100%; display: flex;justify-content: space-between;margin-bottom: 20px;margin-top: 10px;flex-wrap: wrap;">
+
+        <div
+            style="width: 200px;display: flex;align-items: center;justify-content: end;margin-top:5px;margin-bottom: 10px;">
+            <div
+                style="width: 20px;height: 20px;border-radius: 50%;border: 2px solid green;display: flex;justify-content: center;align-items: center;color: green;">
+                <div>+</div>
+            </div>
+            <div
+                style="font-size: 15px;margin: 0 10px;font-family: 'Open Sans', sans-serif;font-weight: bold;color: #808080;">
+                Add an Address</div>
+        </div>
+
+        <div class="saveBtsn">
+            <div>Save</div>
+        </div>
+    </div>
+</div>

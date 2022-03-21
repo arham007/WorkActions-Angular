@@ -1,0 +1,27 @@
+<div>
+    <app-header></app-header>
+</div>
+<div>
+    <app-navbar></app-navbar>
+</div>
+<div class="container">
+    <div class="panelOne" *ngIf="checkLeft">
+        <app-panel1></app-panel1>
+    </div>
+
+    <div class="panelTwo">
+        <div *ngIf="showLeft">
+            <app-drawer></app-drawer>
+        </div>
+        <div>
+            <app-panel2></app-panel2>
+        </div>
+        <div *ngIf="showRight" class="drawer2">
+            <app-drawer2></app-drawer2>
+        </div>
+    </div>
+    <div class="panelthree" *ngIf="checkRight">
+        <app-panel3></app-panel3>
+    </div>
+
+</div>

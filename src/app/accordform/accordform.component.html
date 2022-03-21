@@ -1,0 +1,32 @@
+<form [formGroup]="accordFormB">
+
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2">
+            <app-searchbox></app-searchbox>
+        </div>
+        <div class="item item3">
+            <div class="label">Organisation Name</div>
+        </div>
+        <div class="item item4">
+            <div class="col-75">
+                <input type="text" formControlName="organizationName" placeholder="Your name..">
+
+            </div>
+        </div>
+        <div></div>
+        <div class="item item7">
+            <app-button name="Create an Organization"></app-button>
+        </div>
+        <div class="item item5">
+            <div class="label">Role</div>
+        </div>
+        <div class="item item6">
+            <div class="col-75">
+                <input type="text" formControlName="role" placeholder="Your name..">
+
+            </div>
+        </div>
+
+    </div>
+</form>

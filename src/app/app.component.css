@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+
+  /* flex-wrap: wrap; */
+  background-color: #ece9f1;
+  padding-top: 60px;
+  column-gap: 10px;
+  padding-left: 68px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+.panelOne {
+  transition: all 0.2s;
+}
+.panelTwo {
+  /* max-width: 1000px; */
+  flex: 1 1 auto;
+  min-width: 250px;
+  position: relative;
+}
+.drawer2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-top: 90px;
+  }
+  .navbar {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container {
+    padding-top: 144px;
+  }
+  .panelTwo {
+    min-width: calc(100% - 57px - 10px);
+  }
+}

@@ -1,0 +1,32 @@
+<!-- <div style="display: flex;">
+    <div style="margin-bottom: 15px;">
+        <div style="width: 524px;display: flex;align-items: center;justify-content: space-between;">
+            <div style="font-size: 14px;font-weight: 600;color:#808080;font-family: 'Open Sans', sans-serif;">{{name}}
+                <span style="color: #ef3f7d;margin-left: 5px;">
+                    <fa-icon [icon]="faChevronDown"></fa-icon>
+                </span>
+            </div>
+            <div style="width: 350px;border: 2px solid #eeee;border-radius: 5px;"><input type="text"
+                    style="border: none;outline: none;width: 100%;padding: 5px;" /></div>
+        </div>
+    </div>
+    <div style="margin: 0 10px;">
+        <app-checkbox></app-checkbox>
+    </div>
+</div> -->
+
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">{{name}} <span style="color: #ef3f7d;margin-left: 5px;">
+                        <fa-icon [icon]="faChevronDown"></fa-icon>
+                    </span></label>
+            </div>
+            <div class="col-75" style="display: flex;">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <app-checkbox></app-checkbox>
+            </div>
+        </div>
+    </form>
+</div>

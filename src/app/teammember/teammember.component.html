@@ -1,0 +1,17 @@
+<div *ngFor="let item of usersData">
+
+    <div class="one" (click)="addItem(item)" routerLink="{{item.link}}"
+        style="display: flex;justify-content: space-around;align-items: center;margin-top: 5px;">
+        <div style="display: flex;align-items: center;margin-bottom: 8px;">
+            <img width="30px" style="border-radius: 5px" src={{item.image}} />
+            <div style="margin-left: 10px;">
+                <div style="font-size:13px;">{{item.name}}</div>
+                <div style="font-size: 10px;color: gray;">{{item.time}}</div>
+            </div>
+        </div>
+
+        <div>
+            <div style="width: 9px;height: 9px;background-color: #00C48C;border-radius: 50%;"></div>
+        </div>
+    </div>
+</div>
